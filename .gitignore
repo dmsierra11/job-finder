@@ -1,0 +1,12 @@
+node_modules/
+.env
+data/.secrets/
+data/state/
+data/cv/pdfs/
+dist/
+*.log
+.DS_Store
+web/.next/
+web/out/
+web/AGENTS.md
+.pnpm-store/

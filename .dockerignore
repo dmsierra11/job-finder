@@ -1,0 +1,16 @@
+.git
+.cursor
+node_modules
+web/node_modules
+web/.next
+web/out
+.env
+.env.*
+data/.secrets
+data/recommended-jobs.json
+data/state
+data/cv/pdfs
+data/cv/raw
+n8n
+*.log
+.DS_Store

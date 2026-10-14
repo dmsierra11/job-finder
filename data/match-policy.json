@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "recommendThreshold": 60,
+  "title": {
+    "prefer": [
+      "product engineer",
+      "full stack",
+      "frontend",
+      "full-stack",
+      "software engineer"
+    ],
+    "seniorityPrefer": ["senior", "staff", "lead"],
+    "reject": ["intern", "junior", "apprentice"]
+  },
+  "skills": {
+    "prefer": ["typescript", "react", "node.js", "javascript"],
+    "weight": 5
+  },
+  "locations": {
+    "prefer": [
+      "barcelona",
+      "spain",
+      "catalonia",
+      "catalunya",
+      "eu remote",
+      "europe",
+      "remote"
+    ],
+    "rejectUnlessRemoteEu": ["united states", "us only"]
+  },
+  "industriesBonus": ["fintech", "music", "saas"],
+  "titleDownrank": ["engineering manager", "head of engineering"]
+}

@@ -1,0 +1,161 @@
+{
+    "schemaVersion": 1,
+    "id": "candidate-daniel-sierra",
+    "name": "Daniel Sierra",
+    "targetRole": "product-engineer",
+    "seniority": "senior",
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "yearsExperience": 9,
+    "headline": "Senior Product Engineer | TypeScript, React & Full Stack",
+    "contact": {
+      "linkedin": "linkedin.com/in/daniel-sierra-farias"
+    },
+    "summary": "Senior Product Engineer and former Engineering Manager with 9+ years of experience building customer-facing digital products across frontend, mobile, and backend systems. Strong background in JavaScript/TypeScript and the React ecosystem, with experience owning product initiatives from problem definition through technical design, implementation, release, and iteration.",
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Kotlin",
+      "Java",
+      "React",
+      "React Native",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "Node.js",
+      "APIs",
+      "Relational Data Modelling",
+      "System Design",
+      "Product Engineering",
+      "CI/CD",
+      "Git",
+      "GitHub",
+      "Docker",
+      "Cloud Deployments",
+      "Claude Code",
+      "Cursor",
+      "Agentic Development Workflows",
+      "Prompt Engineering",
+      "Product Discovery",
+      "Agile Delivery"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "proficiency": "native"
+      },
+      {
+        "name": "English",
+        "proficiency": "fluent"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Alcalá",
+        "degree": "MSc",
+        "field": "Project Management (IT Projects)"
+      },
+      {
+        "institution": "Universidad Politécnica de Madrid",
+        "degree": "MSc",
+        "field": "Mobile Application Development"
+      },
+      {
+        "institution": "Universidad Católica Andrés Bello",
+        "degree": "BSc",
+        "field": "Computer Engineering"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Founder & Product Engineer",
+        "company": "Maurique Labs",
+        "location": "Barcelona, Spain",
+        "startDate": "2025",
+        "endDate": "Present",
+        "technologies": [
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Claude Code",
+          "Cursor"
+        ],
+        "highlights": [
+          "Designing and building digital products for the music industry, owning product and technical development end-to-end.",
+          "Building full-stack web applications across frontend experiences, backend services, database models, APIs, and deployment infrastructure.",
+          "Working primarily with TypeScript and modern web technologies to rapidly prototype, validate, and evolve product ideas.",
+          "Using AI-assisted engineering workflows with Claude Code and Cursor throughout discovery, implementation, testing, code review, and iteration."
+        ]
+      },
+      {
+        "title": "Senior Software Engineer → Engineering Manager",
+        "company": "Taxfix",
+        "industry": "fintech",
+        "startDate": "2021",
+        "endDate": "2025",
+        "technologies": [
+          "JavaScript",
+          "TypeScript",
+          "React Native"
+        ],
+        "highlights": [
+          "Progressed from hands-on software engineering into engineering management within a high-growth European fintech.",
+          "Built and delivered customer-facing product experiences as part of cross-functional teams working closely with Product and Design.",
+          "Worked extensively within the JavaScript/TypeScript and React Native ecosystem on a large-scale consumer application.",
+          "Led a cross-functional engineering squad, supporting technical direction, delivery execution, and collaboration across Engineering, Product, and Design."
+        ]
+      },
+      {
+        "title": "React Native Developer",
+        "company": "Devtence / CRF Events",
+        "startDate": "2018",
+        "endDate": "2020",
+        "technologies": [
+          "React Native",
+          "JavaScript",
+          "iOS",
+          "Android"
+        ],
+        "highlights": [
+          "Built cross-platform iOS and Android applications from scratch using React Native and JavaScript.",
+          "Developed product experiences for a major US medical conference organiser, including event schedules, session discovery, and attendee engagement.",
+          "Delivered features across the full development lifecycle while collaborating remotely with a distributed engineering team."
+        ]
+      },
+      {
+        "title": "Android Developer",
+        "company": "bclever / Bclubber",
+        "location": "Madrid, Spain",
+        "startDate": "2017",
+        "endDate": "2018",
+        "technologies": [
+          "Android",
+          "CI/CD",
+          "Google Play"
+        ],
+        "highlights": [
+          "Built Android products for an event discovery and ticketing platform serving consumers, promoters, venues, and hospitality operators.",
+          "Delivered three applications covering event discovery, ticket purchases, promotional offers, venue operations, and bar payments.",
+          "Owned CI/CD infrastructure and application releases to Google Play."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Early Career",
+        "startDate": "2016",
+        "endDate": "2017",
+        "technologies": [
+          "Android",
+          "Java",
+          "Kotlin"
+        ],
+        "highlights": [
+          "Built mobile products using Android, Java, and Kotlin in early-stage and distributed product teams.",
+          "Delivered customer-facing functionality across the development lifecycle and collaborated directly with technical and business stakeholders."
+        ]
+      }
+    ]
+  }
