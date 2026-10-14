@@ -1,4 +1,4 @@
-app = "job-finder-cv-proof"
+app = "job-finder-cv-portfolio"
 primary_region = "iad"
 
 [build]
