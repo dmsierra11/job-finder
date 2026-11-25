@@ -10,7 +10,7 @@ ENV PLAYWRIGHT_CHROMIUM_SANDBOX=0
 ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 ENV CV_DOCS_DIR=/app/data/cv/docs
 
-RUN corepack enable && corepack prepare pnpm@10.26.2 --activate
+RUN npm install -g pnpm@10.26.2
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY web/package.json web/
