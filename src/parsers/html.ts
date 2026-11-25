@@ -1,6 +1,5 @@
 import { createHash } from "node:crypto";
 import * as cheerio from "cheerio";
-import type { AnyNode } from "domhandler";
 
 const SKIP_LINK_TEXT =
   /unsubscribe|privacy|cookie|view (all|more)|see all|sign in|log in|click here|help center|manage (alert|preference)/i;
@@ -36,11 +35,12 @@ export function extractJobsFromAnchors(
   const seen = new Set<string>();
 
   $("a[href]").each((_, element) => {
-    const href = absolutizeHref($(element).attr("href") ?? "");
+    const $el = $(element);
+    const href = absolutizeHref($el.attr("href") ?? "");
     if (!href || !options.hrefMatches(href)) {
       return;
     }
-    const title = normalizeSpace($(element).text());
+    const title = normalizeSpace($el.text());
     if (!title || SKIP_LINK_TEXT.test(title)) {
       return;
     }
@@ -49,7 +49,7 @@ export function extractJobsFromAnchors(
       return;
     }
     seen.add(canonical);
-    const nearby = nearbyLines($, element, title);
+    const nearby = nearbyLines($el, title);
     jobs.push({
       title,
       company: nearby.company,
@@ -73,12 +73,11 @@ function absolutizeHref(href: string): string {
 }
 
 function nearbyLines(
-  $: cheerio.CheerioAPI,
-  element: AnyNode,
+  $el: ReturnType<cheerio.CheerioAPI>,
   title: string,
 ): { company: string; location: string } {
-  const container = $(element).closest("td, li, article, tr, div").first();
-  const block = (container.length > 0 ? container : $(element).parent()).text();
+  const container = $el.closest("td, li, article, tr, div").first();
+  const block = (container.length > 0 ? container : $el.parent()).text();
   const lines = block
     .split(/\n+/)
     .map((line) => normalizeSpace(line))
