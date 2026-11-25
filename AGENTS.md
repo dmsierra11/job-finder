@@ -1,10 +1,10 @@
 # Job finder
 
-A local command-line tool that turns job-board alert emails into a scored shortlist, plus a public page that proofs a pasted CV as the same A4 PDF the CLI already writes.
+Job finder automates a job search. Connect an inbox and job-board sources; it collects listings, scores them against a match policy, and keeps a shortlist. The same system turns markdown CVs into the A4 PDF you send.
 
-Phase 1: n8n on this Mac watches Gmail for every `emailAddress` in `data/sources/job-boards.json` and runs `pnpm poll-email`. The CLI parses listings, scores them with `data/match-policy.json`, and writes matches to `data/recommended-jobs.json`. The candidate bio is `data/cv/raw/daniel-sierra.json`. Markdown CVs live in `data/cv/docs/`. Phase 2 (not built) will add active search for sources that have no inbox channel.
+The first connector is Gmail. n8n on this Mac watches Gmail for every `emailAddress` in `data/sources/job-boards.json` and runs `pnpm poll-email`. The CLI parses listings, scores them with `data/match-policy.json`, and writes matches to `data/recommended-jobs.json`. The candidate bio is `data/cv/raw/daniel-sierra.json`. Markdown CVs live in `data/cv/docs/`. Sources with no email channel are listed and not searched yet. Active search for those sources is not built.
 
-CV proof: a Next.js app in `web/`. Paste markdown, preview the existing A4 document, download the PDF. No password. The public host is Fly.io, one 1 GB machine that stops when idle.
+The public site is a Next.js app in `web/`. Paste markdown, preview the existing A4 document, download the PDF. No password. The public host is Fly.io, one 1 GB machine that stops when idle.
 
 ## Stack
 
